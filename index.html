@@ -151,30 +151,28 @@
 								<img src="assets/images/about/profile_image.jpg" alt="profile_image">
 								<div class="about-list-icon">
 									<ul>
-										<li>
+										<!-- <li>
 											<a href="#">
 												<i  class="fa fa-facebook" aria-hidden="true"></i>
 											</a>
-										</li><!-- / li -->
+										</li> 
 										<li>
 											<a href="#">
 												<i  class="fa fa-dribbble" aria-hidden="true"></i>
 											</a>
-											
-										</li><!-- / li -->
+										</li>
 										<li>
 											<a href="#">
 												<i  class="fa fa-twitter" aria-hidden="true"></i>
 											</a>
-											
-										</li><!-- / li -->
+										</li> -->
 										<li>
-											<a href="#">
+											<a target=".blank"  href="https://www.linkedin.com/in/visaasmara/">
 												<i  class="fa fa-linkedin" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
 										<li>
-											<a href="#">
+											<a target=".blank" href="https://www.instagram.com/visaasmara">
 												<i  class="fa fa-instagram" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
@@ -443,7 +441,7 @@
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href=""><i class="flaticon-themeforest"></i></a>
+											<i class="flaticon-themeforest"></i>
 											<div style="text-align:center" class="profile-icon-name">Designed web & mobile apps <br> Tools: Figma</div>
 										</div>
 									</div>
@@ -452,12 +450,12 @@
 							<div class="col-sm-3">
 								<div class="single-profile">
 									<div class="profile-txt">
-										<a href=""><i class="flaticon-dribbble"></i></a>
+										<i class="flaticon-dribbble"></i>
 										<div class="profile-icon-name">UX Research</div>
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href=""><i class="flaticon-dribbble"></i></a>
+											<i class="flaticon-dribbble"></i>
 											<div style="text-align:center" class="profile-icon-name">Designed user journey<br> Tools: Figjam, Google Form</div>
 										</div>
 									</div>
@@ -471,7 +469,7 @@
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href=""><i class="flaticon-behance-logo"></i></a>
+											<i class="flaticon-behance-logo"></i>
 											<div style="text-align:center" class="profile-icon-name">Designed web & mobile view dashboards <br> Tools: Tableau, Ms. Office</div>
 										</div>
 									</div>
@@ -485,7 +483,7 @@
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href=""><i class="flaticon-github-logo"></i></a>
+											<i class="flaticon-github-logo"></i>
 											<div style="text-align:center" class="profile-icon-name">Managed lalalal of project  <br> Tools: Notion</div>
 										</div>
 									</div>
@@ -502,7 +500,7 @@
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
+											<i class="flaticon-flickr-website-logo-silhouette"></i>
 											<div style="text-align:center" class="profile-icon-name">Managed lalalal of project  <br> Tools: Power Designer, BizagiS</div>
 										</div>
 									</div>
@@ -516,7 +514,7 @@
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href=""><i class="flaticon-smug"></i></a>
+											<i class="flaticon-smug"></i>
 											<div style="text-align:center" class="profile-icon-name">Managed lalalal of project  <br> Tools: Ms. Office</div>
 										</div>
 									</div>
@@ -526,12 +524,12 @@
 								<div class="single-profile">
 									<div class="profile-txt">
 										<a href=""><i class="flaticon-squarespace-logo"></i></a>
-										<div class="profile-icon-name">squareSpace</div>
+										<div class="profile-icon-name">Public Speaking</div>
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href=""><i class="flaticon-squarespace-logo"></i></a>
-											<div style="text-align:center" class="profile-icon-name">squareSpace</div>
+											<i class="flaticon-squarespace-logo"></i>
+											<div style="text-align:center" class="profile-icon-name">Proficient in public speaking</div>
 										</div>
 									</div>
 								</div>
@@ -540,12 +538,12 @@
 								<div class="single-profile profile-no-border">
 									<div class="profile-txt">
 										<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
-										<div class="profile-icon-name">bitBucket</div>
+										<div class="profile-icon-name">Team Work</div>
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
-											<div style="text-align:center"  class="profile-icon-name">bitBucket</div>
+											<i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i>
+											<div style="text-align:center"  class="profile-icon-name">Able to work fluently in team</div>
 										</div>
 									</div>
 								</div>
@@ -711,7 +709,7 @@
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
 								<div class="contact-form">
-									<form>
+									<form id="contactForm">
 										<div class="row">
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
@@ -734,14 +732,16 @@
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
+													<textarea class="form-control" rows="8" id="message" placeholder="Message" name="message"></textarea>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
+														<button style="color:white" type="submit" class="send-email">
+															Submit
+														</button>
 												</div><!--/.single-single-contact-btn-->
 											</div><!--/.col-->
 										</div><!--/.row-->
@@ -753,31 +753,27 @@
 							<div class="single-contact-box">
 								<div class="contact-adress">
 									<div class="contact-add-head">
-										<h3>browny star</h3>
-										<p>uI/uX designer</p>
+										<h3>Visa Asmara</h3>
+										<p>UI Designer | UX Researcher | Data Analyst | Data Visualitator</p>
 									</div>
 									<div class="contact-add-info">
 										<div class="single-contact-add-info">
 											<h3>phone</h3>
-											<p>987-123-6547</p>
+											<p>(+62) 895395182432</p>
 										</div>
 										<div class="single-contact-add-info">
 											<h3>email</h3>
-											<p>browny@info.com</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>website</h3>
-											<p>www.brownsine.com</p>
+											<p>asmaravisa@gmail.com</p>
 										</div>
 									</div>
 								</div><!--/.contact-adress-->
 								<div class="hm-foot-icon">
 									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-dribbble"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--/li-->
+										<!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+										<li><a target=".blank"  href="https://www.linkedin.com/in/visaasmara/"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+										<li><a target=".blank"  href="https://www.instagram.com/visaasmara/"><i class="fa fa-instagram"></i></a></li><!--/li-->
 									</ul><!--/ul-->
 								</div><!--/.hm-foot-icon-->
 							</div><!--/.single-contact-box-->
@@ -794,7 +790,7 @@
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
 					<p>
-						&copy; copyright yourname. design and developed by <a href="https://www.themesine.com/">themesine</a>
+						&copy; Visa Asmara Portfolio</a>
 					</p><!--/p-->
 				</div><!--/.text-center-->
 			</div><!--/.container-->
@@ -844,7 +840,26 @@
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
-        
+
+		<script>
+			document.getElementById('contactForm').addEventListener('submit', function(event) {
+				event.preventDefault(); // Mencegah form melakukan submit default
+	
+				// Ambil nilai dari input form
+				var subject = document.getElementById('subject').value;
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var message = document.getElementById('message').value;
+	
+				// Buat URL mailto
+				var mailtoLink = 'mailto:fikriaziz1472@gmail.com' +
+								 '?subject=' + encodeURIComponent(subject) +
+								 '&body=' + encodeURIComponent(message+'\n\nRegards,\n'+name);
+	
+				// Buka email client
+				window.location.href = mailtoLink;
+			});
+		</script>
     </body>
 	
 </html>
